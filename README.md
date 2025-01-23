@@ -32,6 +32,8 @@ dotnet run
 
 The webapi server is launched ! :D
 
+The app is running on http://localhost:5090. If you go to this URL, you'll get the swagger.
+
 ## Additionnal infos
 
 To add migrations, run:
