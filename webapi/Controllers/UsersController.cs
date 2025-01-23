@@ -10,7 +10,7 @@ namespace webapi.Controllers
     public class UsersController(DataContext context) : ControllerBase
     {
         [HttpGet]
-        public async Task<IEnumerable<AppUser>> GetUsers()
+        public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
             var users = await context.Users.ToListAsync();
 
