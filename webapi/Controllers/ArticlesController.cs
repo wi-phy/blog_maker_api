@@ -35,12 +35,12 @@ namespace webapi.Controllers
 
             var article = new Article
             {
-                Elements = articleDTO.Elements.Select(e => new ArticleElement
+                Elements = [.. articleDTO.Elements.Select(e => new ArticleElement
                 {
                     Type = e.Type,
                     Content = e.Content,
                     Order = e.Order,
-                }).ToList(),
+                })],
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
